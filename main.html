@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Países</title>
+    <link rel="stylesheet" href="./libs/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Juego de Países</h1>
+    </header>
+
+    <div id = "juego">
+        <label class="pregunta-inicial" for="categoria">Elige una categoría: </label>
+        <select id="categoria" name="categoría">
+            <option value="capital">Capital</option>
+            <option value="bandera">Bandera</option>
+            <option value="idioma">Idioma</option>
+        </select><br>
+        <button id = "jugar">Jugar</button><br>
+    </div>
+
+    <div id ="pregunta" class = "hidden">
+        <h2 id="texto-pregunta">What is the <span id = "categoria-seleccionada"> of the country?</span></h2>
+        <div id = "opciones" class = "opciones-container">
+            <div id= "opcion1"class="opcion"></div>
+            <div id= "opcion2"class="opcion"></div>
+            <div id= "opcion3"class="opcion"></div>
+            <div id= "opcion4"class="opcion"></div>
+        </div>
+
+    </div>
+    <div class = fin-juego>
+        <p id="cuenta" class ="hidden"> Cuenta:0</p>
+        <button id = "reiniciar" class="hidden">Volver a empezar</button>
+
+
+    </div>
+ 
+
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/bootstrap.js"></script>
+    <script src="main.js"></script>
+</body>
+<footer>
+    <p>@juego de países</p>
+</footer>
+
+
+</html>

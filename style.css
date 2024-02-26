@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Facilita el cálculo de los tamaños */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./Mapa.png"); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+header h1 {
+    color: #333;
+    background-color: #d1c393;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0; /* Ajusta el espacio superior e inferior */
+}
+
+#juego {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+
+.visible {
+    display: block;
+}
+
+.opciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 80%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.opcion {
+    flex: 0 1 calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #d1c393;
+}
+.correct {
+    background-color: rgb(127, 212, 127);
+}
+
+.incorrect {
+    background-color: rgb(211, 101, 101);
+}
+
+.opcion:hover {
+    background-color: #f0f0f0;
+}
+
+.flag-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+    object-fit: contain; /* Esto asegura que la imagen se ajuste al contenedor sin perder su aspecto */
+    margin: 0 auto; 
+}
+
+.fin-juego {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(49, 69, 107);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgb(10, 75, 196);
+}
+
+#categoria-label {
+    font-size: 1.5em; /* Tamaño de letra más grande */
+    text-align: center;
+    display: block; /* Hace que sea un bloque para poder centrarlo */
+    text-align: center;
+    margin-bottom: 20px; /* Añade un margen inferior para espaciado */
+}
+
+#categoria, #jugar {
+    display: block;
+    margin: 10px auto; /* Centra los elementos */
+    width: 50%;
+}
+
+#jugar, #reiniciar {
+    padding: 10px 20px; /* Aumenta el tamaño del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+#cuenta {
+
+    font-size: 1.5em;
+}
+#pregunta {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto; /* Añade espacio y centra */
+    width: auto;
+}
+.hidden {
+    display: none !important;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #d1c393;; /* Color de fondo claro */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+    font-size: 1em;
+}
+
+
